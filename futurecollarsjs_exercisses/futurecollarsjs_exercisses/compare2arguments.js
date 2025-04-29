@@ -1,15 +1,17 @@
-function compareargs(num1, num2) {
+function compare(num1, num2) {
+    arg1 =1;
+    arg2 =-1;
     if (num1 > num2) {
-        return num1;
+        return [arg1];
     }
     else if (num1 < num2) {
-        return num2;
+        return [arg2];
     }
     else {
         return 0;
     }
 }
 
-console.log(compareargs(5, 3));
-console.log(compareargs(1, 2));
-console.log(compareargs(7, 7));
+console.log(compare(6, 5));
+console.log(compare(1, 2));
+console.log(compare(7, 7));
